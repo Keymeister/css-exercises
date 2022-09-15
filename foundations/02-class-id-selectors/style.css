@@ -1,0 +1,25 @@
+/* I had the below defined by the <p> tag, but the curriculum wants 
+the <p> elements to share a class. I'm not sure if a tag-based declaration 
+counts, so I added unique "oddnum" class selectors to each <p> element. */
+
+/* I tested using "p" instead of ".oddnum", and it worked beautifully.
+Good to know. */
+.oddnum {
+  background-color: rgb(244, 81, 136);
+  font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+.three {
+  font-size: 24px;
+}
+
+#two {
+  color: hsl(203, 70%, 50%);
+  font-size: 36px;
+}
+
+#four {
+  background-color: #C8F672;
+  font-size: 24px;
+  font-weight: 650;
+}
