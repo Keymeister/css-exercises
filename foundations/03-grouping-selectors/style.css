@@ -1,0 +1,41 @@
+/*
+I misunderstood what the assignment wanted.
+The "shared" aspect between the two elements
+didn't refer to the fact that they were both 
+buttons, but was referring to the class 
+selectors I had just added to each...
+My code worked. For the sake of getting used
+to what the lesson is teaching me, I've
+commented out my original work for preservation,
+with the "correct" method of code underneath.
+*/
+
+.first {
+  color: rgb(255, 255, 255);
+/*I forgot to include a comma in the hsl value
+below - it rounded the button's corners  (for 
+some reason), and nullified the color.
+Remember to add commas!*/
+  background-color: hsl(50, 100%, 0%);
+}
+
+
+.second {
+  background-color: #F9E13E;
+}
+
+/*
+This is the functional, but technically incorrect 
+method for both buttons' shared traits:
+
+button {
+  font-size: 28px;
+  font-family: Helvetica, "Times New Roman", sans-serif;
+}
+*/
+
+.first,
+.second {
+  font-size: 28px;
+  font-family: Helvetica, "Times New Roman", sans-serif;
+}
