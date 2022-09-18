@@ -1,0 +1,55 @@
+/* Round two, with the intent to NOT rely on rule order. Hopefully I'm not accidentally
+relying on bits of information that the solution gave after I solved it the first time
+by relying almost solely on rule order in now-renamed style-original.css */
+
+body{
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.para,
+.small-para {
+  color: hsl(0, 0%, 0%);
+  font-weight: 800;
+}
+
+/* I chained .para and .small-para since the smaller
+font only applies to the element with both. */
+
+.para.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.para {
+  font-size: 22px;
+}
+
+/* I switched the .confirm class selector to the #confirm-button ID selector, taking prio
+over the original. */
+
+#confirm-button {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+/* I added BOTH a descendant combinator with .text as the ancestor, and a chained selector of .text and .child
+(since the lesser-font-size line contains .text, and happens to also be the child of an element with .text). */
+
+.text .text.child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+div.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}

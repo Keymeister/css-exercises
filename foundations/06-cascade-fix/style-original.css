@@ -1,0 +1,49 @@
+body{
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.para,
+.small-para {
+  color: hsl(0, 0%, 0%);
+  font-weight: 800;
+}
+
+.para {
+  font-size: 22px;
+}
+
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
+} 
+
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+}
+
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+
+/* I didn't add a descendant combinator to solve this, but moving it below the .text declaration and
+removing the "div" selector gave it equal priority, putting the bold font in first place due to rule order.
+That line was the only thing with a "child" selector, so... It worked, but I may have missed the point of the exercise.
+(provided we weren't supposed to rely on rule order, but the solutions use that as well). Truth be told, I'm not a huge
+fan of rule order. I may rename this .css fle and try again while relying on more consistent means.  
+*/
+
+.child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
