@@ -1,0 +1,68 @@
+/* I used a LOT more flex boxes than the solution, apparently.
+I might re-do it from scratch before submitting, just to
+practice not using so many flexboxes and overcomplicating it. */
+
+.header {
+  font-family: monospace;
+  background: papayawhip;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between; 
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: 900;
+  color: tomato;
+  background: white;
+  padding: 4px 32px;
+  margin: 8px;
+  margin-right: 4px;
+}
+
+ul {
+  /* this removes the dots on the list items*/
+  list-style-type: none;
+  display: flex;
+  flex: 1 1 auto;
+} 
+
+.left-links ul {
+  justify-content: flex-start;
+}
+
+.right-links ul {
+  justify-content: flex-end;
+  margin-right: 4px;
+}
+
+.right-links,
+.left-links {
+display: flex;
+flex: 1 1 auto;
+align-items: center;
+}
+
+li:nth-child(1) {
+  margin-left: -36px;
+}
+
+.left-links li:nth-child(1) {
+}
+
+li {
+ padding: 4px;
+}
+
+a {
+  font-size: 22px;
+  background: white;
+  padding: 8px;
+  /* this removes the line under the links */
+  text-decoration: none;
+
+  /* close enough. I'm not sure what hex color they used for the dark purple text */
+
+  /* nevermind, they were clicked links... */
+  color: rebeccapurple;
+}
