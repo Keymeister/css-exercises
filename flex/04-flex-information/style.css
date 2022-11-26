@@ -10,6 +10,26 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center;
+}
+
+.plants {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+  margin-top: 32px;
+}
+
+.plants div {
+  /* For some reason, making this flex instead of block adds 5px of
+  space between the image and text */
+  
+  /* "Display: block" is the default for <div>. It has been removed. */
+  max-width: 200px;
+  /* "align-items: center;", "flex-firection: column", and
+  "justify-content: flex-start" have no effect without
+  "display: flex;". They have been removed. */
+  text-align: center;
 }
 
 /* do not edit this footer */
