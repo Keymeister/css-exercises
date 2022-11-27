@@ -20,6 +20,29 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  padding: 16px;
+}
+
+.side-box {
+  margin-left: 16px;
+}
+
+.top-box {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 18px;
+  align-items: center;
+}
+
+.text {
+  /* I wish there was an easier way to create space between .header, .text,
+  and the buttons. I can't use gap because placing it all in a flex box
+  causes the buttons to misalign from each other. I'd have to place them both
+  in ANOTHER layer of flexbox. */
+  margin-top: 8px;
+  margin-bottom: 16px;
 }
 
 .icon {
@@ -33,6 +56,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1 0 auto;
 }
 
 .close-button {
